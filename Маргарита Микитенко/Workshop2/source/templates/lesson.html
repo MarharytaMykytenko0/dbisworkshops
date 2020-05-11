@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form method='post' action='../api'>
+	<label>Lesson name</label>
+	<input type="text" name="lesson_name" value="{{data['lesson_name']}}">
+	<input type="submit" name="lesson" value="Send">
+</form>
+{% endblock %}
